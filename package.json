@@ -1,18 +1,29 @@
 {
-  "name": "license-report-generator",
+  "name": "license-report-generator-md",
   "version": "1.0.0",
-  "description": "This script generates a report of the licenses used by a project. It generates two reports: one for direct dependencies and one for all dependencies.",
+  "description": "This script generates a markdown table report of the licenses used by a project. It generates two reports: one for direct dependencies and one for all dependencies.",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "license-report-generator": "index.js"
+  },
   "pkg": {
     "scripts": "index.js"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Lisandro Gomez",
+  "keywords": [
+    "license",
+    "report",
+    "dependencies"
+  ],
+  "author": "Lisandro Gomez lichiii@pm.me",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LichiBruno/license-report-generator/issues"
+  },
+  "homepage": "https://github.com/LichiBruno/license-report-generator#readme",
   "dependencies": {
     "license-checker": "^25.0.1"
   }
