@@ -38,7 +38,6 @@ This script generates license reports for the direct and all dependencies of a N
    ```
 
    Replace `<path-to-project>` with the path to your project directory.
-   ```
 
 ### Running with pre-built executables
   Pre-built executables are available for Windows, macOS, and Linux. You can download the appropriate executable for your system from the Releases page.
