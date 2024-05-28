@@ -1,0 +1,19 @@
+{
+  "name": "license-report-generator",
+  "version": "1.0.0",
+  "description": "This script generates a report of the licenses used by a project. It generates two reports: one for direct dependencies and one for all dependencies.",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "scripts": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lisandro Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "license-checker": "^25.0.1"
+  }
+}
