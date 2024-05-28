@@ -1,6 +1,6 @@
 {
   "name": "license-report-generator-md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This script generates a markdown table report of the licenses used by a project. It generates two reports: one for direct dependencies and one for all dependencies.",
   "main": "index.js",
   "bin": {

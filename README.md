@@ -13,9 +13,19 @@ This script generates license reports for the direct and all dependencies of a N
 - Node.js (if running with `npm` or `yarn`)
 - `npm` or `yarn` installed globally
 
+## Installation
+
+You can install this package globally using npm:
+
+```sh
+npm install -g license-report-generator-md
+# or
+yarn global add license-report-generator-md
+```
+
 ## Usage
 
-### Running with `npm` or `yarn`
+### Running with `node`
 
 1. **Clone the repository:**
 
@@ -23,11 +33,13 @@ This script generates license reports for the direct and all dependencies of a N
    git clone https://github.com/LichiBruno/license-report-generator
    cd license-checker-script
 
+   ```
+
 2. **Install dependencies:**
 
    ```sh
    npm install
-   # or 
+   # or
    yarn install
    ```
 
@@ -39,41 +51,55 @@ This script generates license reports for the direct and all dependencies of a N
 
    Replace `<path-to-project>` with the path to your project directory.
 
+### Running as a Global Package
+
+If you installed the package globally using npm or yarn, you can run it directly from the command line:
+
+```sh
+license-report-generator-md <path-to-project>
+```
+
+Replace `<path-to-project>` with the path to your project directory.
+
 ### Running with pre-built executables
-  Pre-built executables are available for Windows, macOS, and Linux. You can download the appropriate executable for your system from the Releases page.
 
-  1. **Download the executable:**
+Pre-built executables are available for Windows, macOS, and Linux. You can download the appropriate executable for your system from the Releases page.
 
-     - Windows: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-win.exe
-     - macOS: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-macos
-     - Linux: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-linux
+1. **Download the executable:**
 
-  2. **Make the executable file runnable (Linux and macOS):**
+   - Windows: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-win.exe
+   - macOS: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-macos
+   - Linux: https://github.com/LichiBruno/license-report-generator/releases/download/1.0.0/license-report-generator-linux
 
-     ```sh
-     chmod +x license-checker-script-darwin-x64
-     # or
-     chmod +x license-checker-script-linux-x64
-     ```
-  
-  3. **Run the executable:**
+2. **Make the executable file runnable (Linux and macOS):**
 
-     ```sh
-     ./license-checker-script-darwin-x64 <path-to-project>
-     # or
-     ./license-checker-script-linux-x64 <path-to-project>
-     # or for Windows
-     license-checker-script-win32.exe <path-to-project>
-     ```
+   ```sh
+   chmod +x license-checker-script-darwin-x64
+   # or
+   chmod +x license-checker-script-linux-x64
+   ```
+
+3. **Run the executable:**
+
+   ```sh
+   ./license-checker-script-darwin-x64 <path-to-project>
+   # or
+   ./license-checker-script-linux-x64 <path-to-project>
+   # or for Windows
+   license-checker-script-win32.exe <path-to-project>
+   ```
 
 ## Output
-The script will generate two markdown files in the directory where the script is executed:
- - `DIRECT_DEPENDENCIES_LICENSES_REPORT.md`: This file contains a list of all direct dependencies of the project, along with their licenses and copyright information.
- - `ALL_DEPENDENCIES_LICENSES_REPORT.md`: This file contains a list of all dependencies of the project, along with their licenses and copyright information.
 
+The script will generate two markdown files in the directory where the script is executed:
+
+- `DIRECT_DEPENDENCIES_LICENSES_REPORT.md`: This file contains a list of all direct dependencies of the project, along with their licenses and copyright information.
+- `ALL_DEPENDENCIES_LICENSES_REPORT.md`: This file contains a list of all dependencies of the project, along with their licenses and copyright information.
 
 ## Contributing
+
 Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/LichiBruno/license-report-generator/blob/main/LICENSE) file for details.
